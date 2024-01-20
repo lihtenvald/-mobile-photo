@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заполнить анкету и записаться</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<h3>Заполните небольшую анкету</h3>
+    <form action="/handler.php" method="post">
+        <label for="clientName">Ваше имя</label>
+        <input type="text" id="clientName" name="clientName"/>
+        <br/>
+        <p>Проходили ли вы ранее обучение по мобильной фотографии?</p>
+        <input id="yes" type="radio" value="1" name="myRadio">
+        <label for="yes">Да</label>
+         <br/>
+        <input id="no" type="radio" value="2" name="myRadio">
+        <label for="no">Нет</label>
+        <br/>
+        <p>Если да,расскажите подробнее о своем опыте:</p>
+        <textarea name="comment"></textarea>
+        <p>Какие темы для вас интресно изучить</p>
+        <select multiple name="tema">
+            <option value="Построение кадра">Построение кадра</option>
+            <option value="Объем и пространство">Объем и пространство</option>
+            <option value="Цветовое сочетание">Цветовое сочетание</option>
+            <option value="Съемка людей">Съемка людей</option>
+            <option value="Бьюти фотография">Бьюти фотография</option>
+        </select>
+        <p>Где планируете размещать фотографии?</p>
+        <label>
+            <input type="checkbox" name="target" value="1">Instagram
+        </label>
+        <br/>
+        <label>
+            <input type="checkbox" name="target" value="2">Другие соц.сети
+        </label>
+        <br/>
+        <label>
+            <input type="checkbox" name="target" value="3">Для личного сайта
+        </label>
+        <br/>
+        <label>
+            <input type="checkbox" name="target" value="4">Другое
+        </label>
+        <br/>
+        <p>Выберите удобную дату Практикума:</p>
+        <select name="data">
+            <option value="22.01.-31.01.2024">22.01.-31.01.2024</option>
+            <option value="12.02-21.02.2024">12.02-21.02.2024</option>
+            <option value="04.03.-13.03.2024">04.03.-13.03.2024</option>
+            <option value="25.03.-3.04.2024">25.03.-3.04.2024</option>
+        </select>
+        <br/>
+        <br/>
+        <button class="knopka" type="submit">Записаться</button>
+
+    </form>
