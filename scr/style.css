@@ -2,27 +2,33 @@ h1{
 color:#9400D3;
 text-align:center;
 }
-.cite{
+
+.text{
 margin-left:20px;
 font-size:14px;
 }
+
 .rightpic{
 float:right;
 }
+
 * {
 font-style:italic;
 }
+
 table{
 border-collapse:collapse;
 width:300px;
 height:100px;
 }
-.knopka{
+
+.button{
 border-radius:10px;
 color:white;
 transition:.2s linear;
 background:#9370DB;
 padding: 15px 32px;
 }
+
 h3{
 color:#9370DB;}
